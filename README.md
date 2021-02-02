@@ -11,6 +11,18 @@ sudo add-apt-repository ppa:ondrej/php_
 
 __PODE SER NECESSARIO BAIXAR OU HABILITAR A ESTENÇÃO QUE PERMITA CONEXAO PDO AO SQLITE__
 
+no windows digite 
+
+_php --ini_
+
+e ele te mostrara onde encontrar o arquivo
+
+abra o php.ini e procure por
+
+_;extension=pdo_sqlite_
+
+apague o __;__ e salve o arquivo 
+
 e logo aṕos a instalação feche a abra novamente o powershell e abra novamente como __administrador__ e execute o comando:
 
 _choco install php_
