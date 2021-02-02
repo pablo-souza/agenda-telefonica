@@ -4,12 +4,19 @@ Para executar este projeto basta ter o PHP 7.4 ou superiro em sua maquina instal
 
 _Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))_
 
+para instalar no Ubunto e derivados: 
+
+_sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php_
+
+__PODE SER NECESSARIO BAIXAR OU HABILITAR A ESTENÇÃO QUE PERMITA CONEXAO PDO AO SQLITE__
 
 e logo aṕos a instalação feche a abra novamente o powershell e abra novamente como __administrador__ e execute o comando:
 
 _choco install php_
 
-após baixar esse projeto execute no local do arquivo:
+após baixar o projeto, abra o terminal e navegue até a pasta do projeto _angenda-telefonica>php_ e execute:
 
 _php -S localhost:8000_
 
+feito isso você pode abrir _angenda-telefonica\index.html_
