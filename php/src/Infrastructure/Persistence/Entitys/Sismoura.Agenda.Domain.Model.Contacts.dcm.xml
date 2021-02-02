@@ -1,0 +1,23 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Sismoura\Agenda\Domain\Model\Contacts" table="contacts">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="name" column="name" type="string" length="50" nullable="false"/>
+        <field name="lestName" column="lest_name" type="string" length="50" nullable="false"/>
+        
+        <one-to-many field="phones" 
+        target-entity="Sismoura\Agenda\Domain\Model\Phones" mapped-by="contact" />
+
+
+        <!-- <one-to-many field="address" 
+        target-entity="Sismoura\Agenda\Domain\Model\Adresses" mapped-by="contact" /> -->
+        <one-to-one field="address" target-entity="Sismoura\Agenda\Domain\Model\Adresses" mapped-by="contact">
+        </one-to-one>
+
+    </entity>
+</doctrine-mapping>

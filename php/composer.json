@@ -1,0 +1,20 @@
+{
+    "name": "sismoura/agenda-telefonica",
+    "description": "Sistema simples de agenda",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pablo Tavares de Souza",
+            "email": "souza33pablo@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.8"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Sismoura\\Agenda\\": "src/"
+        }
+    }
+}
