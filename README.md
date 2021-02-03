@@ -11,8 +11,11 @@ _choco install php_
 para instalar no Ubunto e derivados: 
 
 _sudo apt install software-properties-common_
+
 _sudo add-apt-repository ppa:ondrej/php_
+
 _sudo apt update_
+
 _sudo apt install php8.0 libapache2-mod-php8.0_
 
 __PODE SER NECESSARIO BAIXAR OU HABILITAR A ESTENÇÃO QUE PERMITA CONEXAO PDO AO SQLITE__
